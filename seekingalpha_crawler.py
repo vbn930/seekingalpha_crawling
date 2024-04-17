@@ -29,6 +29,7 @@ def sample_crawler(logger):
     input_element = driver.find_element(By.XPATH, '//*[@id="root"]/div/div[1]/div/header/div[1]/div[1]/div/div/div/input')
     input_element.send_keys(keyword)
     input_element.send_keys("\n")
+    Util.wait_time(logger, 60)
 
 logger = Util.Logger("Dev")
 sample_crawler(logger)

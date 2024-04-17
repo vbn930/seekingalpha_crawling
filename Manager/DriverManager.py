@@ -83,7 +83,6 @@ class WebDriverManager:
 
     def get_page(self, url, max_wait_time = 10):
         is_page_loaded = False
-        self.driver.minimize_window()
         while(is_page_loaded == False):
             try:
                 self.driver.get(url)
@@ -95,7 +94,6 @@ class WebDriverManager:
             except Exception as e:
                 self.logger.log(log_level="Debug", log_msg=f"Page load failed : {e}")
                 is_page_loaded = False
-            self.driver.minimize_window()
 
     def get_driver(self):
         return self.driver
