@@ -26,10 +26,41 @@ def sample_crawler(logger):
 
     #종목 검색
     keyword = "AFL"
-    input_element = driver.find_element(By.XPATH, '//*[@id="root"]/div/div[1]/div/header/div[1]/div[1]/div/div/div/input')
-    input_element.send_keys(keyword)
-    input_element.send_keys("\n")
-    Util.wait_time(logger, 60)
+    print(f"Keyword : {keyword}")
+    driver_manager.get_page(f"{url}/symbol/{keyword}")
+    
+    #당일 주가
+    price = driver.find_element(By.XPATH, '//*[@id="content"]/div[2]/div[1]/div[2]/span[1]').text
+    print(f"당일 주가 : {price}")
+    
+    #Consensus EPS Estimates
+    driver_manager.get_page(f"{url}/symbol/{keyword}/earnings/estimates")
+    eps_table_elements = driver.find_element(By.XPATH, '//*[@id="content"]/div[2]/div[2]/div/div/section[2]/div/div[2]/div[2]/div[2]/div/table/tbody').find_elements(By.TAG_NAME, "tr")[:2]
+    eps_table_info = []
+    
+    print("Consensus EPS Estimates")
+    for eps_table_element in eps_table_elements:
+        eps_info = []
+        eps_info.append(eps_table_element.find_element(By.TAG_NAME, "div").text)
+        eps_info_elements = eps_table_element.find_elements(By.TAG_NAME, "td")
+        for eps_info_element in eps_info_elements:
+            eps_info.append(eps_info_element.text)
+        eps_table_info.append(eps_info)
+        print(f"Fiscal Period Ending : {eps_info[0]} / EPS Estimate : {eps_info[1]} / YoY Growth : {eps_info[2]} / Forward PE : {eps_info[3]} / Low : {eps_info[4]} / High : {eps_info[5]} / # of Analysts : {eps_info[6]}")
+    
+    revenue_table_elements = driver.find_element(By.XPATH, '//*[@id="content"]/div[2]/div[2]/div/div/section[3]/div/div[2]/div[2]/div[2]/div/table/tbody').find_elements(By.TAG_NAME, "tr")[:2]
+    revenue_table_info = []
+    
+    print("\nRevenue Estimate")
+    for revenue_table_element in revenue_table_elements:
+        revenue_info = []
+        revenue_info.append(revenue_table_element.find_element(By.TAG_NAME, "div").text)
+        revenue_info_elements = revenue_table_element.find_elements(By.TAG_NAME, "td")
+        for revenue_info_element in revenue_info_elements:
+            revenue_info.append(revenue_info_element.text)
+        revenue_table_info.append(revenue_info)
+        print(f"Fiscal Period Ending : {revenue_info[0]} / Revenue Estimate : {revenue_info[1]} / YoY Growth : {revenue_info[2]} / Forward PE : {revenue_info[3]} / Low : {revenue_info[4]} / High : {revenue_info[5]} / # of Analysts : {revenue_info[6]}")
+    
 
-logger = Util.Logger("Dev")
+logger = Util.Logger("Build")
 sample_crawler(logger)
