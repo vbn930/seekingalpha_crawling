@@ -63,4 +63,15 @@ def sample_crawler(logger):
     
 
 logger = Util.Logger("Build")
-sample_crawler(logger)
+#sample_crawler(logger)
+
+def test(logger):
+    driver_manager = DriverManager.WebDriverManager(logger, False, True)
+    driver = driver_manager.get_driver()
+
+    url = "https://www.barchart.com/"
+
+    driver_manager.get_page(url)
+    Util.wait_time(logger, 60)
+
+test(logger)
