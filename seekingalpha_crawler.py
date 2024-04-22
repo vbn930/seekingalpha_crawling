@@ -22,7 +22,7 @@ def sample_crawler(logger):
 
     url = "https://seekingalpha.com/"
 
-    driver_manager.get_page(url)
+    logger.log("Event", "Start time")
 
     #종목 검색
     keyword = "AFL"
@@ -61,9 +61,10 @@ def sample_crawler(logger):
         revenue_table_info.append(revenue_info)
         print(f"Fiscal Period Ending : {revenue_info[0]} / Revenue Estimate : {revenue_info[1]} / YoY Growth : {revenue_info[2]} / Forward PE : {revenue_info[3]} / Low : {revenue_info[4]} / High : {revenue_info[5]} / # of Analysts : {revenue_info[6]}")
     
+    logger.log("Event", "End time")
 
-logger = Util.Logger("Build")
-#sample_crawler(logger)
+logger = Util.Logger("Dev")
+sample_crawler(logger)
 
 def test(logger):
     driver_manager = DriverManager.WebDriverManager(logger, False, True)
@@ -74,4 +75,4 @@ def test(logger):
     driver_manager.get_page(url)
     Util.wait_time(logger, 60)
 
-test(logger)
+#test(logger)

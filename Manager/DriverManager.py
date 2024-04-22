@@ -86,7 +86,6 @@ class WebDriverManager:
         while(is_page_loaded == False):
             try:
                 self.driver.get(url)
-                Util.wait_time(self.logger, 5)
                 self.driver.implicitly_wait(max_wait_time)
                 self.logger.log(log_level="Debug", log_msg=f"Get *{url}* page")
                 self.driver.get_screenshot_as_file("temp.png")
