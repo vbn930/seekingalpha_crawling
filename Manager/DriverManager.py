@@ -18,9 +18,12 @@ import requests
 import os
 import psutil
 from PIL import Image
+from bs4 import BeautifulSoup
+import random
 
 class WebDriverManager:
     def __init__(self, logger, is_headless=False, is_use_udc=False):
+        requests.packages.urllib3.disable_warnings()
         self.logger = logger
         self.is_headless = is_headless
         self.is_use_udc = is_use_udc
@@ -38,15 +41,27 @@ class WebDriverManager:
     def open_driver(self):
         if self.is_use_udc:
             options = uc.ChromeOptions() 
+            proxy = '35.72.118.126:80'
             options.headless = False  # Set headless to False to run in non-headless mode
             options.add_argument('--disable-dev-shm-usage')
             options.add_argument("--disable-notifications")
-            driver = uc.Chrome(use_subprocess=True, options=options) 
+            options.add_argument("--disable-popup-blocking")
+            options.add_argument('--remote-debugging-port=9222')
+            #options.add_argument("--proxy-server=socks5://127.0.0.1:9150")
+            driver = uc.Chrome(use_subprocess=True, options=options)
+            # selenium_stealth 설정
+            stealth(driver,
+                    vendor="Google Inc. ",
+                    platform="Win32",
+                    webgl_vendor="intel Inc. ",
+                    renderer= "Intel Iris OpenGL Engine",
+                    fix_hairline=True,
+                    )
             if self.is_headless == True: 
                 driver.minimize_window()
         
             self.driver = driver
-            self.driver.set_page_load_timeout(10)
+            self.driver.set_page_load_timeout(60)
         else:
             chrome_options = Options()
             user_agent = "Mozilla/5.0 (Linux; Android 9; SM-G975F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.83 Mobile Safari/537.36"
@@ -55,11 +70,11 @@ class WebDriverManager:
             chrome_options.add_argument("--disable-notifications")
             chrome_options.add_argument("--disable-blink-features=AnimationControlled")
             chrome_options.add_argument('--start-maximized')
+            chrome_options.add_argument("--proxy-server=socks5://127.0.0.1:9150")
             chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
             if self.is_headless:
                 chrome_options.add_argument("headless")
             driver = webdriver.Chrome(options=chrome_options)
-            driver.minimize_window()
             self.driver = driver
     
     def close_driver(self):
@@ -81,14 +96,14 @@ class WebDriverManager:
             self.driver = None
             self.logger.log(log_level="Debug", log_msg=f"Driver deleted")
 
-    def get_page(self, url, max_wait_time = 10):
+    def get_page(self, url, wait_time = 5, max_wait_time = 10):
         is_page_loaded = False
         while(is_page_loaded == False):
             try:
                 self.driver.get(url)
+                Util.wait_time(self.logger, wait_time)
                 self.driver.implicitly_wait(max_wait_time)
                 self.logger.log(log_level="Debug", log_msg=f"Get *{url}* page")
-                self.driver.get_screenshot_as_file("temp.png")
                 is_page_loaded = True
             except Exception as e:
                 self.logger.log(log_level="Debug", log_msg=f"Page load failed : {e}")
@@ -96,6 +111,17 @@ class WebDriverManager:
 
     def get_driver(self):
         return self.driver
+    
+    def get_bs_soup(self, url):
+        response = requests.get(url)
+
+        if response.status_code == 200:
+            html = response.text
+            soup = BeautifulSoup(html, 'html.parser')
+            return soup
+        else : 
+            self.logger.log(log_level="Error", log_msg=f"Failed to load page with BeautifulSoup")
+            return False
 
     def is_element_exist(self, find_type, element):
         is_exist = False

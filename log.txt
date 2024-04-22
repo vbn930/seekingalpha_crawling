@@ -1,0 +1,7 @@
+[2024-04-22 04:27:54][Event] =TREX Crawler ver1.0=
+[2024-04-22 04:27:54][Debug] Driver init
+[2024-04-22 04:27:56][Event] 진행 상황 : 1/592
+[2024-04-22 04:27:56][Event] 현재 크롤링 중인 종목 코드 : AAL
+[2024-04-22 04:27:57][Debug] Wait 5 secs
+[2024-04-22 04:28:02][Debug] Get *https://seekingalpha.com* page
+[2024-04-22 04:28:02][Error] 
