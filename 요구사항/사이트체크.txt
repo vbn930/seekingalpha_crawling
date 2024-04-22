@@ -1,0 +1,4 @@
+https://www.barchart.com/ - udc 없이 크롤링 가능
+https://www.webull.com/ - udc 없이 크롤링 가능
+https://kr.investing.com/ - udc 없이 크로링 가능
+https://seekingalpha.com/ - 캡챠 있음
