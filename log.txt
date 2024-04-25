@@ -1,7 +1,284 @@
-[2024-04-22 04:27:54][Event] =TREX Crawler ver1.0=
-[2024-04-22 04:27:54][Debug] Driver init
-[2024-04-22 04:27:56][Event] 진행 상황 : 1/592
-[2024-04-22 04:27:56][Event] 현재 크롤링 중인 종목 코드 : AAL
-[2024-04-22 04:27:57][Debug] Wait 5 secs
-[2024-04-22 04:28:02][Debug] Get *https://seekingalpha.com* page
-[2024-04-22 04:28:02][Error] 
+[2024-04-25 19:40:05][Event] =SeekingAlpha Crawler ver1.0=
+[2024-04-25 19:40:05][Debug] Driver init
+[2024-04-25 19:40:07][Event] 다음과 같은 종목 코드를 총 57개 입력 받았습니다! 
+['CSCO', 'CVNA', 'CVS', 'CVX', 'CZR', 'DAL', 'DASH', 'DDOG', 'DE', 'DG', 'DIS', 'DKNG', 'DLTR', 'DNA', 'DOCU', 'DOW', 'DUK', 'DVN', 'EBAY', 'ENPH', 'ENVX', 'EOSE', 'EPAM', 'ET', 'ETSY', 'EXPE', 'F', 'FCEL', 'FCX', 'FDX', 'FSLR', 'FTNT', 'FUBO', 'FUTU', 'GD', 'GE', 'GILD', 'GIS', 'GM', 'GME', 'GOLD', 'GOOG', 'GPS', 'GRAB', 'GS', 'GSAT', 'HAL', 'HD', 'HE', 'HOOD', 'HPQ', 'HUT', 'IBM', 'IMMR', 'INMD', 'INTC', 'INTU']
+[2024-04-25 19:40:07][Event] 크롤링 예상 소요 시간은 총 57분 입니다!
+[2024-04-25 19:40:07][Event] 진행 상황 : 1/57
+[2024-04-25 19:40:07][Event] 현재 크롤링 중인 종목 코드 : CSCO
+[2024-04-25 19:40:08][Debug] Wait 60 secs
+[2024-04-25 19:41:08][Debug] Get *https://seekingalpha.com/symbol/CSCO/earnings/estimates* page
+[2024-04-25 19:41:09][Event] 진행 상황 : 2/57
+[2024-04-25 19:41:09][Event] 현재 크롤링 중인 종목 코드 : CVNA
+[2024-04-25 19:41:10][Debug] Wait 60 secs
+[2024-04-25 19:42:10][Debug] Get *https://seekingalpha.com/symbol/CVNA/earnings/estimates* page
+[2024-04-25 19:42:10][Event] 진행 상황 : 3/57
+[2024-04-25 19:42:10][Event] 현재 크롤링 중인 종목 코드 : CVS
+[2024-04-25 19:42:11][Debug] Wait 60 secs
+[2024-04-25 19:43:11][Debug] Get *https://seekingalpha.com/symbol/CVS/earnings/estimates* page
+[2024-04-25 19:43:21][Event] 페이지를 다시 로드합니다.
+[2024-04-25 19:43:21][Debug] Wait 60 secs
+[2024-04-25 19:44:21][Event] 진행 상황 : 4/57
+[2024-04-25 19:44:21][Event] 현재 크롤링 중인 종목 코드 : CVX
+[2024-04-25 19:44:22][Debug] Wait 60 secs
+[2024-04-25 19:45:22][Debug] Get *https://seekingalpha.com/symbol/CVX/earnings/estimates* page
+[2024-04-25 19:45:32][Event] 페이지를 다시 로드합니다.
+[2024-04-25 19:45:32][Debug] Wait 60 secs
+[2024-04-25 19:46:32][Event] 진행 상황 : 5/57
+[2024-04-25 19:46:32][Event] 현재 크롤링 중인 종목 코드 : CZR
+[2024-04-25 19:46:34][Debug] Wait 60 secs
+[2024-04-25 19:47:34][Debug] Get *https://seekingalpha.com/symbol/CZR/earnings/estimates* page
+[2024-04-25 19:47:44][Event] 페이지를 다시 로드합니다.
+[2024-04-25 19:47:44][Debug] Wait 60 secs
+[2024-04-25 19:48:44][Event] 진행 상황 : 6/57
+[2024-04-25 19:48:44][Event] 현재 크롤링 중인 종목 코드 : DAL
+[2024-04-25 19:48:45][Debug] Wait 60 secs
+[2024-04-25 19:49:45][Debug] Get *https://seekingalpha.com/symbol/DAL/earnings/estimates* page
+[2024-04-25 19:49:55][Event] 페이지를 다시 로드합니다.
+[2024-04-25 19:49:55][Debug] Wait 60 secs
+[2024-04-25 19:50:55][Event] 진행 상황 : 7/57
+[2024-04-25 19:50:55][Event] 현재 크롤링 중인 종목 코드 : DASH
+[2024-04-25 19:50:56][Debug] Wait 60 secs
+[2024-04-25 19:51:56][Debug] Get *https://seekingalpha.com/symbol/DASH/earnings/estimates* page
+[2024-04-25 19:52:06][Event] 페이지를 다시 로드합니다.
+[2024-04-25 19:52:06][Debug] Wait 60 secs
+[2024-04-25 19:53:06][Event] 진행 상황 : 8/57
+[2024-04-25 19:53:06][Event] 현재 크롤링 중인 종목 코드 : DDOG
+[2024-04-25 19:53:07][Debug] Wait 60 secs
+[2024-04-25 19:54:07][Debug] Get *https://seekingalpha.com/symbol/DDOG/earnings/estimates* page
+[2024-04-25 19:54:07][Event] 진행 상황 : 9/57
+[2024-04-25 19:54:07][Event] 현재 크롤링 중인 종목 코드 : DE
+[2024-04-25 19:54:08][Debug] Wait 60 secs
+[2024-04-25 19:55:08][Debug] Get *https://seekingalpha.com/symbol/DE/earnings/estimates* page
+[2024-04-25 19:55:08][Event] 진행 상황 : 10/57
+[2024-04-25 19:55:08][Event] 현재 크롤링 중인 종목 코드 : DG
+[2024-04-25 19:55:09][Debug] Wait 60 secs
+[2024-04-25 19:56:09][Debug] Get *https://seekingalpha.com/symbol/DG/earnings/estimates* page
+[2024-04-25 19:56:19][Event] 페이지를 다시 로드합니다.
+[2024-04-25 19:56:20][Debug] Wait 60 secs
+[2024-04-25 19:57:20][Event] 진행 상황 : 11/57
+[2024-04-25 19:57:20][Event] 현재 크롤링 중인 종목 코드 : DIS
+[2024-04-25 19:57:21][Debug] Wait 60 secs
+[2024-04-25 19:58:21][Debug] Get *https://seekingalpha.com/symbol/DIS/earnings/estimates* page
+[2024-04-25 19:58:31][Event] 페이지를 다시 로드합니다.
+[2024-04-25 19:58:31][Debug] Wait 60 secs
+[2024-04-25 19:59:32][Event] 진행 상황 : 12/57
+[2024-04-25 19:59:32][Event] 현재 크롤링 중인 종목 코드 : DKNG
+[2024-04-25 19:59:32][Debug] Wait 60 secs
+[2024-04-25 20:00:32][Debug] Get *https://seekingalpha.com/symbol/DKNG/earnings/estimates* page
+[2024-04-25 20:00:42][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:00:43][Debug] Wait 60 secs
+[2024-04-25 20:01:43][Event] 진행 상황 : 13/57
+[2024-04-25 20:01:43][Event] 현재 크롤링 중인 종목 코드 : DLTR
+[2024-04-25 20:01:44][Debug] Wait 60 secs
+[2024-04-25 20:02:44][Debug] Get *https://seekingalpha.com/symbol/DLTR/earnings/estimates* page
+[2024-04-25 20:02:54][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:02:54][Debug] Wait 60 secs
+[2024-04-25 20:03:54][Event] 진행 상황 : 14/57
+[2024-04-25 20:03:54][Event] 현재 크롤링 중인 종목 코드 : DNA
+[2024-04-25 20:03:55][Debug] Wait 60 secs
+[2024-04-25 20:04:55][Debug] Get *https://seekingalpha.com/symbol/DNA/earnings/estimates* page
+[2024-04-25 20:05:05][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:05:05][Debug] Wait 60 secs
+[2024-04-25 20:06:05][Event] 진행 상황 : 15/57
+[2024-04-25 20:06:05][Event] 현재 크롤링 중인 종목 코드 : DOCU
+[2024-04-25 20:06:06][Debug] Wait 60 secs
+[2024-04-25 20:07:06][Debug] Get *https://seekingalpha.com/symbol/DOCU/earnings/estimates* page
+[2024-04-25 20:07:16][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:07:16][Debug] Wait 60 secs
+[2024-04-25 20:08:16][Event] 진행 상황 : 16/57
+[2024-04-25 20:08:16][Event] 현재 크롤링 중인 종목 코드 : DOW
+[2024-04-25 20:08:17][Debug] Wait 60 secs
+[2024-04-25 20:09:17][Debug] Get *https://seekingalpha.com/symbol/DOW/earnings/estimates* page
+[2024-04-25 20:09:27][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:09:27][Debug] Wait 60 secs
+[2024-04-25 20:10:27][Event] 진행 상황 : 17/57
+[2024-04-25 20:10:27][Event] 현재 크롤링 중인 종목 코드 : DUK
+[2024-04-25 20:10:28][Debug] Wait 60 secs
+[2024-04-25 20:11:28][Debug] Get *https://seekingalpha.com/symbol/DUK/earnings/estimates* page
+[2024-04-25 20:11:38][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:11:39][Debug] Wait 60 secs
+[2024-04-25 20:12:39][Event] 진행 상황 : 18/57
+[2024-04-25 20:12:39][Event] 현재 크롤링 중인 종목 코드 : DVN
+[2024-04-25 20:12:39][Debug] Wait 60 secs
+[2024-04-25 20:13:39][Debug] Get *https://seekingalpha.com/symbol/DVN/earnings/estimates* page
+[2024-04-25 20:13:49][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:13:50][Debug] Wait 60 secs
+[2024-04-25 20:14:50][Event] 진행 상황 : 19/57
+[2024-04-25 20:14:50][Event] 현재 크롤링 중인 종목 코드 : EBAY
+[2024-04-25 20:14:50][Debug] Wait 60 secs
+[2024-04-25 20:15:50][Debug] Get *https://seekingalpha.com/symbol/EBAY/earnings/estimates* page
+[2024-04-25 20:16:01][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:16:01][Debug] Wait 60 secs
+[2024-04-25 20:17:01][Event] 진행 상황 : 20/57
+[2024-04-25 20:17:01][Event] 현재 크롤링 중인 종목 코드 : ENPH
+[2024-04-25 20:17:02][Debug] Wait 60 secs
+[2024-04-25 20:18:02][Debug] Get *https://seekingalpha.com/symbol/ENPH/earnings/estimates* page
+[2024-04-25 20:18:12][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:18:12][Debug] Wait 60 secs
+[2024-04-25 20:19:12][Event] 진행 상황 : 21/57
+[2024-04-25 20:19:12][Event] 현재 크롤링 중인 종목 코드 : ENVX
+[2024-04-25 20:19:14][Debug] Wait 60 secs
+[2024-04-25 20:20:14][Debug] Get *https://seekingalpha.com/symbol/ENVX/earnings/estimates* page
+[2024-04-25 20:20:15][Event] 진행 상황 : 22/57
+[2024-04-25 20:20:15][Event] 현재 크롤링 중인 종목 코드 : EOSE
+[2024-04-25 20:20:15][Debug] Wait 60 secs
+[2024-04-25 20:21:15][Debug] Get *https://seekingalpha.com/symbol/EOSE/earnings/estimates* page
+[2024-04-25 20:21:15][Event] 진행 상황 : 23/57
+[2024-04-25 20:21:15][Event] 현재 크롤링 중인 종목 코드 : EPAM
+[2024-04-25 20:21:16][Debug] Wait 60 secs
+[2024-04-25 20:22:16][Debug] Get *https://seekingalpha.com/symbol/EPAM/earnings/estimates* page
+[2024-04-25 20:22:17][Event] 진행 상황 : 24/57
+[2024-04-25 20:22:17][Event] 현재 크롤링 중인 종목 코드 : ET
+[2024-04-25 20:22:17][Debug] Wait 60 secs
+[2024-04-25 20:23:17][Debug] Get *https://seekingalpha.com/symbol/ET/earnings/estimates* page
+[2024-04-25 20:23:27][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:23:28][Debug] Wait 60 secs
+[2024-04-25 20:24:28][Event] 진행 상황 : 25/57
+[2024-04-25 20:24:28][Event] 현재 크롤링 중인 종목 코드 : ETSY
+[2024-04-25 20:24:28][Debug] Wait 60 secs
+[2024-04-25 20:25:28][Debug] Get *https://seekingalpha.com/symbol/ETSY/earnings/estimates* page
+[2024-04-25 20:25:38][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:25:39][Debug] Wait 60 secs
+[2024-04-25 20:26:39][Event] 진행 상황 : 26/57
+[2024-04-25 20:26:39][Event] 현재 크롤링 중인 종목 코드 : EXPE
+[2024-04-25 20:26:40][Debug] Wait 60 secs
+[2024-04-25 20:27:40][Debug] Get *https://seekingalpha.com/symbol/EXPE/earnings/estimates* page
+[2024-04-25 20:27:50][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:27:50][Debug] Wait 60 secs
+[2024-04-25 20:28:50][Event] 진행 상황 : 27/57
+[2024-04-25 20:28:50][Event] 현재 크롤링 중인 종목 코드 : F
+[2024-04-25 20:28:51][Debug] Wait 60 secs
+[2024-04-25 20:29:51][Debug] Get *https://seekingalpha.com/symbol/F/earnings/estimates* page
+[2024-04-25 20:29:51][Event] 진행 상황 : 28/57
+[2024-04-25 20:29:51][Event] 현재 크롤링 중인 종목 코드 : FCEL
+[2024-04-25 20:29:52][Debug] Wait 60 secs
+[2024-04-25 20:30:52][Debug] Get *https://seekingalpha.com/symbol/FCEL/earnings/estimates* page
+[2024-04-25 20:30:52][Event] 진행 상황 : 29/57
+[2024-04-25 20:30:52][Event] 현재 크롤링 중인 종목 코드 : FCX
+[2024-04-25 20:30:52][Debug] Wait 60 secs
+[2024-04-25 20:31:52][Debug] Get *https://seekingalpha.com/symbol/FCX/earnings/estimates* page
+[2024-04-25 20:31:53][Event] 진행 상황 : 30/57
+[2024-04-25 20:31:53][Event] 현재 크롤링 중인 종목 코드 : FDX
+[2024-04-25 20:31:53][Debug] Wait 60 secs
+[2024-04-25 20:32:53][Debug] Get *https://seekingalpha.com/symbol/FDX/earnings/estimates* page
+[2024-04-25 20:32:54][Event] 진행 상황 : 31/57
+[2024-04-25 20:32:54][Event] 현재 크롤링 중인 종목 코드 : FSLR
+[2024-04-25 20:32:54][Debug] Wait 60 secs
+[2024-04-25 20:33:54][Debug] Get *https://seekingalpha.com/symbol/FSLR/earnings/estimates* page
+[2024-04-25 20:34:04][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:34:04][Debug] Wait 60 secs
+[2024-04-25 20:35:05][Event] 진행 상황 : 32/57
+[2024-04-25 20:35:05][Event] 현재 크롤링 중인 종목 코드 : FTNT
+[2024-04-25 20:35:05][Debug] Wait 60 secs
+[2024-04-25 20:36:05][Debug] Get *https://seekingalpha.com/symbol/FTNT/earnings/estimates* page
+[2024-04-25 20:36:15][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:36:15][Debug] Wait 60 secs
+[2024-04-25 20:37:16][Event] 진행 상황 : 33/57
+[2024-04-25 20:37:16][Event] 현재 크롤링 중인 종목 코드 : FUBO
+[2024-04-25 20:37:16][Debug] Wait 60 secs
+[2024-04-25 20:38:16][Debug] Get *https://seekingalpha.com/symbol/FUBO/earnings/estimates* page
+[2024-04-25 20:38:26][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:38:27][Debug] Wait 60 secs
+[2024-04-25 20:39:27][Event] 진행 상황 : 34/57
+[2024-04-25 20:39:27][Event] 현재 크롤링 중인 종목 코드 : FUTU
+[2024-04-25 20:39:27][Debug] Wait 60 secs
+[2024-04-25 20:40:27][Debug] Get *https://seekingalpha.com/symbol/FUTU/earnings/estimates* page
+[2024-04-25 20:40:37][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:40:37][Debug] Wait 60 secs
+[2024-04-25 20:41:38][Event] 진행 상황 : 35/57
+[2024-04-25 20:41:38][Event] 현재 크롤링 중인 종목 코드 : GD
+[2024-04-25 20:41:38][Debug] Wait 60 secs
+[2024-04-25 20:42:38][Debug] Get *https://seekingalpha.com/symbol/GD/earnings/estimates* page
+[2024-04-25 20:42:48][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:42:49][Debug] Wait 60 secs
+[2024-04-25 20:43:49][Event] 진행 상황 : 36/57
+[2024-04-25 20:43:49][Event] 현재 크롤링 중인 종목 코드 : GE
+[2024-04-25 20:43:49][Debug] Wait 60 secs
+[2024-04-25 20:44:49][Debug] Get *https://seekingalpha.com/symbol/GE/earnings/estimates* page
+[2024-04-25 20:44:59][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:45:00][Debug] Wait 60 secs
+[2024-04-25 20:46:00][Event] 진행 상황 : 37/57
+[2024-04-25 20:46:00][Event] 현재 크롤링 중인 종목 코드 : GILD
+[2024-04-25 20:46:00][Debug] Wait 60 secs
+[2024-04-25 20:47:00][Debug] Get *https://seekingalpha.com/symbol/GILD/earnings/estimates* page
+[2024-04-25 20:47:01][Event] 진행 상황 : 38/57
+[2024-04-25 20:47:01][Event] 현재 크롤링 중인 종목 코드 : GIS
+[2024-04-25 20:47:01][Debug] Wait 60 secs
+[2024-04-25 20:48:01][Debug] Get *https://seekingalpha.com/symbol/GIS/earnings/estimates* page
+[2024-04-25 20:48:02][Event] 진행 상황 : 39/57
+[2024-04-25 20:48:02][Event] 현재 크롤링 중인 종목 코드 : GM
+[2024-04-25 20:48:02][Debug] Wait 60 secs
+[2024-04-25 20:49:02][Debug] Get *https://seekingalpha.com/symbol/GM/earnings/estimates* page
+[2024-04-25 20:49:12][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:49:13][Debug] Wait 60 secs
+[2024-04-25 20:50:13][Event] 진행 상황 : 40/57
+[2024-04-25 20:50:13][Event] 현재 크롤링 중인 종목 코드 : GME
+[2024-04-25 20:50:14][Debug] Wait 60 secs
+[2024-04-25 20:51:14][Debug] Get *https://seekingalpha.com/symbol/GME/earnings/estimates* page
+[2024-04-25 20:51:24][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:51:24][Debug] Wait 60 secs
+[2024-04-25 20:52:24][Event] 진행 상황 : 41/57
+[2024-04-25 20:52:24][Event] 현재 크롤링 중인 종목 코드 : GOLD
+[2024-04-25 20:52:26][Debug] Wait 60 secs
+[2024-04-25 20:53:26][Debug] Get *https://seekingalpha.com/symbol/GOLD/earnings/estimates* page
+[2024-04-25 20:53:36][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:53:36][Debug] Wait 60 secs
+[2024-04-25 20:54:36][Event] 진행 상황 : 42/57
+[2024-04-25 20:54:36][Event] 현재 크롤링 중인 종목 코드 : GOOG
+[2024-04-25 20:54:36][Debug] Wait 60 secs
+[2024-04-25 20:55:36][Debug] Get *https://seekingalpha.com/symbol/GOOG/earnings/estimates* page
+[2024-04-25 20:55:47][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:55:47][Debug] Wait 60 secs
+[2024-04-25 20:56:47][Event] 진행 상황 : 43/57
+[2024-04-25 20:56:47][Event] 현재 크롤링 중인 종목 코드 : GPS
+[2024-04-25 20:56:48][Debug] Wait 60 secs
+[2024-04-25 20:57:48][Debug] Get *https://seekingalpha.com/symbol/GPS/earnings/estimates* page
+[2024-04-25 20:57:58][Event] 페이지를 다시 로드합니다.
+[2024-04-25 20:57:58][Debug] Wait 60 secs
+[2024-04-25 20:58:58][Event] 진행 상황 : 44/57
+[2024-04-25 20:58:58][Event] 현재 크롤링 중인 종목 코드 : GRAB
+[2024-04-25 20:58:59][Debug] Wait 60 secs
+[2024-04-25 20:59:59][Debug] Get *https://seekingalpha.com/symbol/GRAB/earnings/estimates* page
+[2024-04-25 21:00:09][Event] 페이지를 다시 로드합니다.
+[2024-04-25 21:00:09][Debug] Wait 60 secs
+[2024-04-25 21:01:09][Event] 진행 상황 : 45/57
+[2024-04-25 21:01:09][Event] 현재 크롤링 중인 종목 코드 : GS
+[2024-04-25 21:01:10][Debug] Wait 60 secs
+[2024-04-25 21:02:10][Debug] Get *https://seekingalpha.com/symbol/GS/earnings/estimates* page
+[2024-04-25 21:02:20][Event] 페이지를 다시 로드합니다.
+[2024-04-25 21:02:20][Debug] Wait 60 secs
+[2024-04-25 21:03:20][Event] 진행 상황 : 46/57
+[2024-04-25 21:03:20][Event] 현재 크롤링 중인 종목 코드 : GSAT
+[2024-04-25 21:03:21][Debug] Wait 60 secs
+[2024-04-25 21:04:21][Debug] Get *https://seekingalpha.com/symbol/GSAT/earnings/estimates* page
+[2024-04-25 21:04:31][Event] 페이지를 다시 로드합니다.
+[2024-04-25 21:04:31][Debug] Wait 60 secs
+[2024-04-25 21:05:31][Event] 진행 상황 : 47/57
+[2024-04-25 21:05:31][Event] 현재 크롤링 중인 종목 코드 : HAL
+[2024-04-25 21:05:32][Debug] Wait 60 secs
+[2024-04-25 21:06:32][Debug] Get *https://seekingalpha.com/symbol/HAL/earnings/estimates* page
+[2024-04-25 21:06:42][Event] 페이지를 다시 로드합니다.
+[2024-04-25 21:06:42][Debug] Wait 60 secs
+[2024-04-25 21:07:43][Event] 진행 상황 : 48/57
+[2024-04-25 21:07:43][Event] 현재 크롤링 중인 종목 코드 : HD
+[2024-04-25 21:07:43][Debug] Wait 60 secs
+[2024-04-25 21:08:43][Debug] Get *https://seekingalpha.com/symbol/HD/earnings/estimates* page
+[2024-04-25 21:08:43][Event] 진행 상황 : 49/57
+[2024-04-25 21:08:43][Event] 현재 크롤링 중인 종목 코드 : HE
+[2024-04-25 21:08:44][Debug] Wait 60 secs
+[2024-04-25 21:09:44][Debug] Get *https://seekingalpha.com/symbol/HE/earnings/estimates* page
+[2024-04-25 21:09:44][Event] 진행 상황 : 50/57
+[2024-04-25 21:09:44][Event] 현재 크롤링 중인 종목 코드 : HOOD
+[2024-04-25 21:09:45][Debug] Wait 60 secs
+[2024-04-25 21:10:45][Debug] Get *https://seekingalpha.com/symbol/HOOD/earnings/estimates* page
+[2024-04-25 21:10:55][Event] 페이지를 다시 로드합니다.
+[2024-04-25 21:10:55][Debug] Wait 60 secs
+[2024-04-25 21:11:55][Event] 진행 상황 : 51/57
+[2024-04-25 21:11:55][Event] 현재 크롤링 중인 종목 코드 : HPQ
+[2024-04-25 21:11:56][Debug] Wait 60 secs
+[2024-04-25 21:12:56][Debug] Get *https://seekingalpha.com/symbol/HPQ/earnings/estimates* page
+[2024-04-25 21:12:56][Event] 진행 상황 : 52/57
+[2024-04-25 21:12:56][Event] 현재 크롤링 중인 종목 코드 : HUT
+[2024-04-25 21:12:57][Debug] Wait 60 secs
+[2024-04-25 21:13:57][Debug] Get *https://seekingalpha.com/symbol/HUT/earnings/estimates* page
+[2024-04-25 21:13:57][Error] list index out of range

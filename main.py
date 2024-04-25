@@ -4,11 +4,11 @@ from Utility import Util
 import atexit
 import seekingalpha_crawler
 
-#pyinstaller -n "TREX Crawler ver1.0" --clean --onefile main.py
+#pyinstaller -n "SeekingAlpha Crawler ver1.0" --clean --onefile main.py
 
 def main():
-    logger = Util.Logger("Dev")
-    logger.log(log_level="Event", log_msg=f"=TREX Crawler ver1.0=")
+    logger = Util.Logger("Build")
+    logger.log(log_level="Event", log_msg=f"=SeekingAlpha Crawler ver1.0=")
     crawler = seekingalpha_crawler.SeekingAlpha_Crawler(logger)
     #crawler.start_crawling()
     try:

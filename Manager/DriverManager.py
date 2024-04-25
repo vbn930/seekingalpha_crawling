@@ -49,14 +49,6 @@ class WebDriverManager:
             options.add_argument('--remote-debugging-port=9222')
             #options.add_argument("--proxy-server=socks5://127.0.0.1:9150")
             driver = uc.Chrome(use_subprocess=True, options=options)
-            # selenium_stealth 설정
-            stealth(driver,
-                    vendor="Google Inc. ",
-                    platform="Win32",
-                    webgl_vendor="intel Inc. ",
-                    renderer= "Intel Iris OpenGL Engine",
-                    fix_hairline=True,
-                    )
             if self.is_headless == True: 
                 driver.minimize_window()
         
@@ -70,16 +62,19 @@ class WebDriverManager:
             chrome_options.add_argument("--disable-notifications")
             chrome_options.add_argument("--disable-blink-features=AnimationControlled")
             chrome_options.add_argument('--start-maximized')
-            chrome_options.add_argument("--proxy-server=socks5://127.0.0.1:9150")
+            #chrome_options.add_argument("--proxy-server=socks5://127.0.0.1:9150")
             chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
             if self.is_headless:
                 chrome_options.add_argument("headless")
             driver = webdriver.Chrome(options=chrome_options)
             self.driver = driver
+            
+        self.driver.minimize_window()
     
     def close_driver(self):
         if self.driver != None:
             pid = self.driver.service.process.pid
+            self.driver.close()
             self.driver.quit()
             self.logger.log(log_level="Debug", log_msg=f"Driver PID : {pid}")
             new_process_list = []
