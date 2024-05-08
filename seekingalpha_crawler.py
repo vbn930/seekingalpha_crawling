@@ -15,7 +15,12 @@ from selenium.common.exceptions import NoSuchElementException
 from dataclasses import dataclass
 import pandas as pd
 import datetime
+<<<<<<< Updated upstream
 from fake_useragent import UserAgent
+=======
+import time
+import os
+>>>>>>> Stashed changes
 
 @dataclass
 class StockData:
@@ -209,6 +214,10 @@ class SeekingAlpha_Crawler:
         self.file_manager.creat_dir(f"./output/{output_name}")
         
         stock_codes = self.get_init_settings_from_file()
+<<<<<<< Updated upstream
+=======
+        stock_codes = stock_codes * 16
+>>>>>>> Stashed changes
         
         cnt = 1
         stock_total = len(stock_codes)
